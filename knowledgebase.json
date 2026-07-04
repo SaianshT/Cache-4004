@@ -655,7 +655,7 @@
         {"version": "Windows 8", "codename": "Chidori / Jupiter"},
         {"version": "Windows 10", "codename": "Threshold / Redstone"},
         {"version": "Windows 11", "codename": "Sun Valley"},
-        {"version": "Windows 12", "codename": "Hudson Valley"}
+        {"version": "Windows 12 (unconfirmed)", "codename": "Hudson Valley"}
       ],
       "android": [
         {"version": "Android 1.5", "codename": "Cupcake"},
