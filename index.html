@@ -4,60 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Quiz Mastery Library</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Tech Quiz Mastery Library</h1>
-            <p>An open-source tech trivia database by Saiansh Tapuriah</p>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <span class="site-wordmark">Tech Quiz Mastery Library</span>
+            <span class="site-credit">by Saiansh Tapuriah</span>
         </div>
     </header>
 
     <main class="container">
+
+        <!-- HOME -->
         <section id="view-home" class="view-section">
-            <div class="dashboard-grid">
-                <button class="dash-card" data-target="view-kb">
-                    <span class="icon">📚</span>
-                    <h3>Knowledge Base</h3>
-                    <p>Extensive information about all things tech</p>
-                </button>
-                
-                <button class="dash-card" data-target="view-quizzes">
-                    <span class="icon">💡</span>
-                    <h3>Practice Quizzes</h3>
-                    <p>Test your knowledge in an interactive way</p>
-                </button>
-                
-                <button class="dash-card" data-target="view-strategy">
-                    <span class="icon">🧠</span>
-                    <h3>Strategy</h3>
-                    <p>Best quizzing techniques and mechanics</p>
-                </button>
-                
-                <button class="dash-card" data-target="view-external">
-                    <span class="icon">🔗</span>
-                    <h3>External Resources</h3>
-                    <p>Delve deeper</p>
-                </button>
+            <div class="home-intro">
+                <h1>Your competitive quizzing toolkit.</h1>
+                <p>Structured reference data, 1,000+ practice questions, and an archive of TCS InQuizitive and ShriTeq broadcasts — all in one place.</p>
             </div>
+            <nav class="home-nav">
+                <button class="home-nav-item" data-target="view-kb">
+                    <div>
+                        <div class="home-nav-title">Knowledge Base</div>
+                        <div class="home-nav-desc">Reference tables for IT companies, OS codenames, acronyms, tech media, and more.</div>
+                    </div>
+                    <span class="home-nav-arrow">→</span>
+                </button>
+                <button class="home-nav-item" data-target="view-quizzes">
+                    <div>
+                        <div class="home-nav-title">Practice Quizzes</div>
+                        <div class="home-nav-desc">1,000 curated questions across 17 categories — flashcard or list view, easy to hard.</div>
+                    </div>
+                    <span class="home-nav-arrow">→</span>
+                </button>
+                <button class="home-nav-item" data-target="view-strategy">
+                    <div>
+                        <div class="home-nav-title">Strategy Guide</div>
+                        <div class="home-nav-desc">Round formats, cheat sheets, and techniques for competitive quizzing.</div>
+                    </div>
+                    <span class="home-nav-arrow">→</span>
+                </button>
+                <button class="home-nav-item" data-target="view-external">
+                    <div>
+                        <div class="home-nav-title">External Resources</div>
+                        <div class="home-nav-desc">TCS InQuizitive and ShriTeq video archives, Google Doodles, and more.</div>
+                    </div>
+                    <span class="home-nav-arrow">→</span>
+                </button>
+            </nav>
         </section>
 
+        <!-- KNOWLEDGE BASE -->
         <section id="view-kb" class="view-section hidden">
-            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
-            
-            <div class="kb-header">
-                <h2>The Knowledge Base</h2>
-                <p>Select a category to load its data, or use the search bar to filter entries instantly.</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-home">&larr; Home</button>
             </div>
-
+            <div class="page-header">
+                <h2>Knowledge Base</h2>
+                <p>Select a category, or search to filter entries.</p>
+            </div>
             <div class="kb-controls">
-                <select id="kb-category-select" class="modern-select">
-                    </select>
-                <input type="text" id="kb-search" class="modern-input" placeholder="Search current category...">
+                <select id="kb-category-select" class="modern-select"></select>
+                <input type="text" id="kb-search" class="modern-input" placeholder="Search within category...">
             </div>
-
             <div class="table-responsive">
                 <table id="kb-table" class="data-table">
                     <thead id="kb-table-head"></thead>
@@ -66,33 +77,42 @@
             </div>
         </section>
 
+        <!-- PRACTICE QUIZZES -->
         <section id="view-quizzes" class="view-section hidden">
-            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
-            <div class="kb-header">
-                <h2>💡 The Quizzing Arena</h2>
-                <p>Configure your practice quiz<br>Select your categories, choose your difficulties, and drop into the arena.</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-home">&larr; Home</button>
             </div>
 
-            <div id="quiz-setup-panel" class="quiz-setup-card">
-                <div class="filter-section">
-                    <h3>1. Select Categories</h3>
-                    <button id="select-all-cats" class="text-btn">Select All / None</button>
-                    <div id="quiz-category-checkboxes" class="checkbox-grid">
+            <div id="quiz-setup-panel">
+                <div class="page-header">
+                    <h2>Practice Quizzes</h2>
+                    <p>Filter by category and difficulty, then choose your study mode.</p>
+                </div>
+
+                <div class="quiz-setup-card">
+                    <div class="filter-section">
+                        <div class="filter-row">
+                            <h3>Categories</h3>
+                            <button id="select-all-cats" class="text-btn">Toggle all</button>
                         </div>
-                </div>
-
-                <div class="filter-section">
-                    <h3>2. Select Difficulty</h3>
-                    <div id="quiz-difficulty-checkboxes" class="checkbox-grid">
-                        <label><input type="checkbox" value="easy" checked> Easy</label>
-                        <label><input type="checkbox" value="medium" checked> Medium</label>
-                        <label><input type="checkbox" value="hard" checked> Hard</label>
+                        <div id="quiz-category-checkboxes" class="checkbox-grid"></div>
                     </div>
-                </div>
 
-                <div class="quiz-launch-actions">
-                    <button id="btn-launch-flashcards" class="action-btn">Launch Flashcards</button>
-                    <button id="btn-launch-list" class="action-btn alt-btn">Launch List View</button>
+                    <div class="filter-section">
+                        <div class="filter-row">
+                            <h3>Difficulty</h3>
+                        </div>
+                        <div id="quiz-difficulty-checkboxes" class="checkbox-grid diff-grid">
+                            <label><input type="checkbox" value="easy" checked> Easy</label>
+                            <label><input type="checkbox" value="medium" checked> Medium</label>
+                            <label><input type="checkbox" value="hard" checked> Hard</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-launch-actions">
+                        <button id="btn-launch-flashcards" class="action-btn">Flashcards</button>
+                        <button id="btn-launch-list" class="action-btn alt-btn">List View</button>
+                    </div>
                 </div>
             </div>
 
@@ -111,7 +131,7 @@
                                     <span class="badge diff-badge" id="fc-diff">Difficulty</span>
                                 </div>
                                 <h3 id="fc-question" class="fc-text">Question goes here?</h3>
-                                <p class="fc-hint">Click card to reveal answer</p>
+                                <p class="fc-hint">Click to reveal answer</p>
                             </div>
                             <div class="flashcard-face flashcard-back">
                                 <div class="card-meta">
@@ -123,15 +143,14 @@
                         </div>
                     </div>
                     <div class="flashcard-controls">
-                        <button id="btn-next-card" class="action-btn">Next Question &rarr;</button>
+                        <button id="btn-next-card" class="action-btn">Next &rarr;</button>
                     </div>
                 </div>
 
                 <div id="list-view" class="hidden">
-                    <div id="list-container" class="list-container">
-                        </div>
+                    <div id="list-container" class="list-container"></div>
                     <div class="pagination-controls">
-                        <button id="btn-prev-page" class="action-btn alt-btn">&larr; Previous</button>
+                        <button id="btn-prev-page" class="action-btn alt-btn">&larr; Prev</button>
                         <span id="page-indicator">Page 1 of X</span>
                         <button id="btn-next-page" class="action-btn alt-btn">Next &rarr;</button>
                     </div>
@@ -139,79 +158,84 @@
             </div>
         </section>
 
+        <!-- STRATEGY -->
         <section id="view-strategy" class="view-section hidden">
-            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
-            <div class="kb-header">
-                <h2>🧠 Strategic Blueprint</h2>
-                <p>Master round formats and game strategies (more tips coming soon)</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-home">&larr; Home</button>
             </div>
-
-            <div class="external-links-container">
-                <!-- All or Nothing Cheat Sheet Card -->
-                <a href="https://docs.google.com/document/d/1jOYLvcyVb4d1KsRRREyrQg6DephOJUFP/edit?usp=sharing&ouid=101096332312818898781&rtpof=true&sd=true" target="_blank" class="external-card grid-strategy-card" style="text-decoration: none; display: block;">
-                    <span class="link-title" style="display: flex; align-items: center; gap: 0.5rem;">
-                        All or Nothing Round: Potential Categories and Answers ↗
-                    </span>
-                    <span class="link-desc" style="display: block; margin-top: 0.5rem; color: var(--text-secondary);">
-                        Potential Categories for grid-based 'All or Nothing' or 'Take your Pick' category-styled rounds with multiple options.
-                    </span>
+            <div class="page-header">
+                <h2>Strategy Guide</h2>
+                <p>Round formats and cheat sheets. More tips coming soon.</p>
+            </div>
+            <div class="resource-list">
+                <a href="https://docs.google.com/document/d/1jOYLvcyVb4d1KsRRREyrQg6DephOJUFP/edit?usp=sharing&ouid=101096332312818898781&rtpof=true&sd=true" target="_blank" class="resource-item">
+                    <div class="resource-item-body">
+                        <span class="resource-item-title">All or Nothing: Potential Categories and Answers</span>
+                        <span class="resource-item-desc">Potential categories for grid-based rounds with multiple options.</span>
+                    </div>
+                    <span class="resource-arrow">↗</span>
                 </a>
             </div>
         </section>
 
-        <!-- EXTERNAL RESOURCES PAGE -->
+        <!-- EXTERNAL RESOURCES -->
         <section id="view-external" class="view-section hidden">
-            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
-            <div class="kb-header">
-                <h2>🔗 External Resources</h2>
-                <p>Curated links to live databases, competitive archives, and past quizzes.</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-home">&larr; Home</button>
             </div>
-            
-            <div class="external-links-container">
-                <!-- Google Doodles -->
-                <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="external-card">
-                    <span class="link-title">Google Doodles Archive ↗</span>
-                    <span class="link-desc">Pre-sorted timelines for CS, Engineering, Space, and Telecommunications milestones.</span>
+            <div class="page-header">
+                <h2>External Resources</h2>
+                <p>Competitive archives and reference databases.</p>
+            </div>
+            <div class="resource-list">
+                <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="resource-item">
+                    <div class="resource-item-body">
+                        <span class="resource-item-title">Google Doodles Archive</span>
+                        <span class="resource-item-desc">Pre-sorted timelines for CS, Engineering, Space, and Telecommunications milestones.</span>
+                    </div>
+                    <span class="resource-arrow">↗</span>
                 </a>
-
-                <!-- TCS InQuizitive Archive Launcher -->
-                <button class="external-card tcs-launcher nav-btn" data-target="view-tcs-archives" style="text-align: left; width: 100%; border-radius: 8px; background-color: var(--card-bg);">
-                    <span class="link-title">Past TCS InQuizitive Quizzes 🏆 &rarr;</span>
-                    <span class="link-desc">Explore the dedicated archive of recent regional and national finals.</span>
+                <button class="resource-item tcs-launcher nav-btn" data-target="view-tcs-archives">
+                    <div class="resource-item-body">
+                        <span class="resource-item-title">TCS InQuizitive Archive</span>
+                        <span class="resource-item-desc">Regional and national finals from 2022–2025.</span>
+                    </div>
+                    <span class="resource-arrow">→</span>
                 </button>
-
-                <!-- ShriTeq Archive Launcher -->
-                <button class="external-card nav-btn" data-target="view-shriteq-archives" style="text-align: left; width: 100%; border-radius: 8px; background-color: var(--card-bg); margin-top: 1rem; cursor: pointer; border: 1px solid var(--border-color); transition: all 0.2s ease;">
-                    <span class="link-title">ShriTeq Livestreams 🎥 &rarr;</span>
-                    <span class="link-desc">Explore the dedicated archive of recent ShriTeq Middle and Senior broadcasts.</span>
+                <button class="resource-item nav-btn" data-target="view-shriteq-archives">
+                    <div class="resource-item-body">
+                        <span class="resource-item-title">ShriTeq Livestreams</span>
+                        <span class="resource-item-desc">Middle and Senior school broadcasts from 2023–2025.</span>
+                    </div>
+                    <span class="resource-arrow">→</span>
                 </button>
             </div>
         </section>
 
-        <!-- TCS ARCHIVES PAGE -->
+        <!-- TCS ARCHIVES -->
         <section id="view-tcs-archives" class="view-section hidden">
-            <button class="back-btn" data-target="view-external">&larr; Back to Resources</button>
-            <div class="kb-header">
-                <h2>🏆 TCS InQuizitive Archive</h2>
-                <p>Select a season to load the specific regional and national broadcasts.</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-external">&larr; Resources</button>
+            </div>
+            <div class="page-header">
+                <h2>TCS InQuizitive Archive</h2>
+                <p>Select a season to browse regional and national broadcasts.</p>
             </div>
 
-            <!-- Master Year Toggles -->
             <div class="year-button-grid">
-                <button class="action-btn year-btn" data-year="2025">2025 Season</button>
-                <button class="action-btn year-btn" data-year="2024">2024 Season</button>
+                <button class="action-btn alt-btn year-btn" data-year="2025">2025 Season</button>
+                <button class="action-btn alt-btn year-btn" data-year="2024">2024 Season</button>
                 <a href="https://www.youtube.com/watch?v=bqkQC_XSH8U" target="_blank" class="action-btn alt-btn">2023 National Final ↗</a>
                 <a href="https://www.youtube.com/watch?v=305v8b9mUxU" target="_blank" class="action-btn alt-btn">2022 National Final ↗</a>
             </div>
 
             <hr class="section-divider">
 
-            <!-- 2025 Broadcasts -->
             <div id="links-2025" class="links-panel hidden">
-                <div class="video-button-grid" style="margin-bottom: 2rem;">
-                    <a href="https://www.youtube.com/watch?v=rvuTTukiqFg" target="_blank" class="video-btn highlight-btn">2025 National Finals</a>
+                <div class="archive-national-row">
+                    <a href="https://www.youtube.com/watch?v=rvuTTukiqFg" target="_blank" class="video-btn highlight-btn">2025 National Finals →</a>
                 </div>
-                <h3>2025 Regional Finals</h3>
+                <p class="archive-group-label">Regional Finals</p>
                 <div class="video-button-grid">
                     <a href="https://www.youtube.com/watch?v=WC6Cfq-cB0c" target="_blank" class="video-btn">Bangalore</a>
                     <a href="https://www.youtube.com/watch?v=WB4irBVuQYk" target="_blank" class="video-btn">Chennai</a>
@@ -226,12 +250,11 @@
                 </div>
             </div>
 
-            <!-- 2024 Broadcasts -->
             <div id="links-2024" class="links-panel hidden">
-                <div class="video-button-grid" style="margin-bottom: 2rem;">
-                    <a href="https://www.youtube.com/watch?v=-aVdB8dJ0pY" target="_blank" class="video-btn highlight-btn">2024 National Finals</a>
+                <div class="archive-national-row">
+                    <a href="https://www.youtube.com/watch?v=-aVdB8dJ0pY" target="_blank" class="video-btn highlight-btn">2024 National Finals →</a>
                 </div>
-                <h3>2024 Regional Finals</h3>
+                <p class="archive-group-label">Regional Finals</p>
                 <div class="video-button-grid">
                     <a href="https://www.youtube.com/watch?v=IPJcX11apGg&pp=0gcJCQYKAYcqIYzv" target="_blank" class="video-btn">Delhi</a>
                     <a href="https://www.youtube.com/watch?v=tsb68mJHUjs" target="_blank" class="video-btn">Mumbai</a>
@@ -248,26 +271,27 @@
                 </div>
             </div>
         </section>
-        <!-- SHRITEQ ARCHIVES PAGE -->
+
+        <!-- SHRITEQ ARCHIVES -->
         <section id="view-shriteq-archives" class="view-section hidden">
-            <button class="back-btn" data-target="view-external">&larr; Back to Resources</button>
-            <div class="kb-header">
-                <h2>🎥 ShriTeq Livestreams</h2>
-                <p>Select a year to load the specific Middle and Senior school broadcasts.</p>
+            <div class="page-nav">
+                <button class="back-btn" data-target="view-external">&larr; Resources</button>
+            </div>
+            <div class="page-header">
+                <h2>ShriTeq Livestreams</h2>
+                <p>Select a year to browse Middle and Senior school broadcasts.</p>
             </div>
 
-            <!-- Master Year Toggles -->
             <div class="year-button-grid">
-                <button class="action-btn shriteq-year-btn" data-year="2025">2025 Season</button>
-                <button class="action-btn shriteq-year-btn" data-year="2024">2024 Season</button>
-                <button class="action-btn shriteq-year-btn" data-year="2023">2023 Season</button>
+                <button class="action-btn alt-btn shriteq-year-btn" data-year="2025">2025 Season</button>
+                <button class="action-btn alt-btn shriteq-year-btn" data-year="2024">2024 Season</button>
+                <button class="action-btn alt-btn shriteq-year-btn" data-year="2023">2023 Season</button>
             </div>
 
             <hr class="section-divider">
 
-            <!-- 2025 Broadcasts -->
             <div id="shriteq-links-2025" class="shriteq-links-panel hidden">
-                <h3>2025 Broadcasts</h3>
+                <p class="archive-group-label">2025 Broadcasts</p>
                 <div class="video-button-grid">
                     <a href="https://youtu.be/FBklvjP9rtE?t=10744" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
                     <a href="https://youtu.be/LGFVDkK_wTc?t=17521" target="_blank" class="video-btn">Senior Semis</a>
@@ -276,9 +300,8 @@
                 </div>
             </div>
 
-            <!-- 2024 Broadcasts -->
             <div id="shriteq-links-2024" class="shriteq-links-panel hidden">
-                <h3>2024 Broadcasts</h3>
+                <p class="archive-group-label">2024 Broadcasts</p>
                 <div class="video-button-grid">
                     <a href="https://youtu.be/ch6WOpw917U?t=11969" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
                     <a href="https://youtu.be/fQQC8_rNQTc?t=1199" target="_blank" class="video-btn">Senior Semis</a>
@@ -287,9 +310,8 @@
                 </div>
             </div>
 
-            <!-- 2023 Broadcasts -->
             <div id="shriteq-links-2023" class="shriteq-links-panel hidden">
-                <h3>2023 Broadcasts</h3>
+                <p class="archive-group-label">2023 Broadcasts</p>
                 <div class="video-button-grid">
                     <a href="https://youtu.be/NSIZkvCryQA?t=11922" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
                     <a href="https://youtu.be/xEQYpO1Xses?t=320" target="_blank" class="video-btn">Senior Semis</a>
@@ -297,7 +319,8 @@
                     <a href="https://youtu.be/xEQYpO1Xses?t=5370" target="_blank" class="video-btn">Middle Semis</a>
                 </div>
             </div>
-        </section>        
+        </section>
+
     </main>
 
     <script src="app.js"></script>

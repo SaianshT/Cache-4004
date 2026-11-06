@@ -152,5 +152,5 @@ This project is open-source. Feel free to use, adapt, and share it — a credit 
 ---
 
 <div align="center">
-  Made with ☕ by <strong>Saiansh Tapuriah</strong>
+  Made by <strong>Saiansh Tapuriah</strong>
 </div>
