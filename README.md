@@ -1,6 +1,6 @@
-# 🧠 Tech Quiz Mastery Library
+# cache-4004
 
-> **An open-source tech trivia database and interactive study platform for competitive quizzers.**
+> **Low-latency memory & reference engine for competitive tech quizzing.**
 
 Built for participants of Science and Technology Quizzes, this is a fully self-contained study tool - no frameworks, no build steps, no install. Just open `index.html` and explore.
 
@@ -55,7 +55,7 @@ The structured reference database covers:
 ## 🗂️ Project Structure
 
 ```
-tech-quiz-resources/
+cache-4004/
 ├── index.html          # SPA shell — all views, toggled via CSS
 ├── app.js              # All logic: routing, KB, quiz engine, flashcards
 ├── style.css           # Hand-crafted design system
