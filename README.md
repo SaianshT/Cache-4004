@@ -2,7 +2,7 @@
 
 > **An open-source tech trivia database and interactive study platform for competitive quizzers.**
 
-Built for participants of events like **TCS InQuizitive** and **ShriTeq**, this is a fully self-contained study tool — no frameworks, no build steps, no install. Just open `index.html` and go.
+Built for participants of Science and Technology Quizzes, this is a fully self-contained study tool - no frameworks, no build steps, no install. Just open `index.html` and explore.
 
 ---
 
@@ -10,63 +10,45 @@ Built for participants of events like **TCS InQuizitive** and **ShriTeq**, this 
 
 | Feature | Description |
 |---|---|
-| 📚 **Knowledge Base** | Structured reference tables covering IT companies, OS codenames, acronyms, tech media, and more |
-| 💡 **Practice Quizzes** | 1,000 curated Q&A pairs filterable by category and difficulty |
-| 🃏 **Flashcard Mode** | Flip-card study session with a shuffled deck (Fisher-Yates algorithm — no repeats!) |
-| 📋 **List View Mode** | Paginated Q&A list with reveal-on-click answers |
-| 🧠 **Strategy Guide** | Round-format cheat sheets for grid-based rounds like *All or Nothing* |
-| 🔗 **External Resources** | Curated archive of TCS InQuizitive (2022–2025) and ShriTeq (2023–2025) livestreams |
+|**Knowledge Base** | Detailed reference tables covering IT companies, acronyms, tech media, and more |
+|**Practice Quizzes** | 1000+ Q&A pairs filterable by category and difficulty |
+|**Flashcard Mode** | Flip-card study session with a shuffled deck (Fisher-Yates algorithm - no repeats!) |
+|**List View Mode** | Paginated Q&A list with reveal-on-click answers |
+|**Strategy Guide** | Quizzing strategy and insights|
+|**External Resources** | Curated archive of external resources for additional exposure|
 
 ---
 
 ## 🚀 Getting Started
 
 No installation required. This is a pure HTML/CSS/JS app.
-
-```bash
-# Clone the repository
-git clone https://github.com/SaianshT/tech-quiz-resources.git
-
-# Open in your browser
-open index.html   # macOS
-start index.html  # Windows
-```
-
-> **Note:** The app fetches `knowledgebase.json` and `quiz.json` via `fetch()`. If you're opening the file directly (via `file://`), you may need to serve it through a local server due to browser CORS restrictions.
-
-```bash
-# Quick local server (Python)
-python -m http.server 8000
-# Then visit http://localhost:8000
-```
-
+Hosted currently on GitHub pages: https://saiansht.github.io/tech-quiz-resources/ 
 ---
 
 ## 📊 Quiz Database
 
-**1,000 questions** across 17 categories and 3 difficulty levels.
+**1000 questions** across 17 categories and 3 difficulty levels.
 
-### By Category
+### Current Category List
 
-| Category | Questions |
-|---|---|
-| Software | 144 |
-| Video Games | 79 |
-| IT Companies | 76 |
-| Programming | 65 |
-| Tech Personalities | 60 |
-| Movies | 57 |
-| Emerging Tech | 57 |
-| Cybersecurity | 56 |
-| Acronyms | 107 |
-| Hardware | 107 |
-| Tech History | 38 |
-| Space Tech | 33 |
-| India Tech | 29 |
-| Sports Tech | 28 |
-| Crypto | 23 |
-| Books | 22 |
-| Robotics | 19 |
+|---|
+| Software |
+| Video Games |
+| IT Companies |
+| Programming |
+| Tech Personalities |
+| Movies |
+| Emerging Tech |
+| Cybersecurity |
+| Acronyms |
+| Hardware |
+| Tech History |
+| Space Tech |
+| India Tech |
+| Sports Tech |
+| Crypto |
+| Books |
+| Robotics |
 
 ### By Difficulty
 
@@ -83,7 +65,7 @@ python -m http.server 8000
 The structured reference database covers:
 
 - **Major IT Companies & Lore** — Founders, CEOs, HQs, acquisitions, taglines
-- **Indian Startups Ecosystem**
+- **Indian Startups & Tech**
 - **Codenames** — Windows OS, Android OS, Intel Processors, Apple macOS
 - **Acronyms** — IT Infrastructure, Gaming Terminology, Corporate Etymology
 - **Books by Tech Personalities**
@@ -97,9 +79,9 @@ The structured reference database covers:
 tech-quiz-resources/
 ├── index.html          # SPA shell — all views, toggled via CSS
 ├── app.js              # All logic: routing, KB, quiz engine, flashcards
-├── style.css           # Full hand-crafted design system
-├── knowledgebase.json  # Structured reference data
-└── quiz.json           # 1,000 Q&A pairs
+├── style.css           # Hand-crafted design system
+├── knowledgebase.json  # Reference data
+└── quiz.json           # 1000 Q&A pairs
 ```
 
 ---
@@ -147,7 +129,7 @@ Contributions are welcome! If you'd like to add questions, fix answers, or expan
 
 ## 📄 License
 
-This project is open-source. Feel free to use, adapt, and share it — a credit is always appreciated!
+This project is open-source. Feel free to use, adapt, and share it - credit is always appreciated!
 
 ---
 
