@@ -22,7 +22,7 @@ Built for participants of competitive Science and Technology Quizzes (TCS InQuiz
 ## 🚀 Getting Started
 
 No installation required. This is a pure HTML/CSS/JS app.
-Hosted currently on GitHub pages: https://saiansht.github.io/tech-quiz-resources/ 
+Hosted currently on GitHub pages: https://saiansht.github.io/Cache-4004/ 
 ---
 
 ## 📊 Quiz Database
