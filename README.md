@@ -1,6 +1,6 @@
 # Cache-4004
 
-> **Quizzing from the fastest memory.**
+> **Zero-latency recall for competitive quizzers.**
 
 Built for participants of competitive Science and Technology Quizzes (TCS InQuizitive, ShriTeq, and school circuits). This is a zero-dependency study platform — no frameworks, no build steps, no install. Just open `index.html` and commit tech lore to instant recall.
 
