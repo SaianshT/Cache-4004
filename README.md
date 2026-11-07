@@ -29,27 +29,6 @@ Hosted currently on GitHub pages: https://saiansht.github.io/tech-quiz-resources
 
 **1000 questions** across 17 categories and 3 difficulty levels.
 
-### Current Category List
-
-|---|
-| Software |
-| Video Games |
-| IT Companies |
-| Programming |
-| Tech Personalities |
-| Movies |
-| Emerging Tech |
-| Cybersecurity |
-| Acronyms |
-| Hardware |
-| Tech History |
-| Space Tech |
-| India Tech |
-| Sports Tech |
-| Crypto |
-| Books |
-| Robotics |
-
 ### By Difficulty
 
 | Difficulty | Questions |
@@ -83,25 +62,6 @@ tech-quiz-resources/
 ├── knowledgebase.json  # Reference data
 └── quiz.json           # 1000 Q&A pairs
 ```
-
----
-
-## 🏆 External Resources Included
-
-### TCS InQuizitive Archive
-Regional and National Finals broadcasts from **2022 to 2025** across cities including Bangalore, Chennai, Delhi, Mumbai, Hyderabad, Pune, Ahmedabad, Kochi, Kolkata, Nagpur, Indore, and Bhubaneswar.
-
-### ShriTeq Livestreams
-Middle and Senior school broadcasts from **2023 to 2025** — Finals and Semifinals.
-
----
-
-## 🛠️ Tech Stack
-
-- **HTML5** — Semantic markup, single-page architecture
-- **CSS3** — Custom properties, animations, responsive grid
-- **Vanilla JavaScript (ES6+)** — Zero dependencies, zero build tooling
-- **JSON** — All data stored in flat, human-readable files
 
 ---
 
