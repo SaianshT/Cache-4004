@@ -1,8 +1,8 @@
-# cache-4004
+# Cache-4004
 
-> **Low-latency memory & reference engine for competitive tech quizzing.**
+> **Quizzing from the fastest memory.**
 
-Built for participants of Science and Technology Quizzes, this is a fully self-contained study tool - no frameworks, no build steps, no install. Just open `index.html` and explore.
+Built for participants of competitive Science and Technology Quizzes (TCS InQuizitive, ShriTeq, and school circuits). This is a zero-dependency study platform — no frameworks, no build steps, no install. Just open `index.html` and commit tech lore to instant recall.
 
 ---
 
@@ -55,7 +55,7 @@ The structured reference database covers:
 ## 🗂️ Project Structure
 
 ```
-cache-4004/
+Cache-4004/
 ├── index.html          # SPA shell — all views, toggled via CSS
 ├── app.js              # All logic: routing, KB, quiz engine, flashcards
 ├── style.css           # Hand-crafted design system
