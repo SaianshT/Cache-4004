@@ -2,10 +2,9 @@
   <h1 align="center">Cache-4004</h1>
   <p align="center"><strong>Zero-Latency Tech Recall & Knowledge Engine for Competitive Quizzers</strong></p>
   <p align="center">
-    <a href="https://saiansht.github.io/Cache-4004/"><img src="https://img.shields.io/badge/Live_Demo-saiansht.github.io%2FCache--4004-0D9488?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"></a>
-    <img src="https://img.shields.io/badge/Competition_Impact-ShriTeq_Dual_Champions-2563EB?style=for-the-badge&logo=trophy&logoColor=white" alt="ShriTeq Dual Champions">
-    <img src="https://img.shields.io/badge/Architecture-Zero_Dependency_SPA-0F172A?style=for-the-badge" alt="Zero Dependencies">
-    <img src="https://img.shields.io/badge/Stack-Vanilla_HTML5_%2F_CSS3_%2F_JS-1E293B?style=for-the-badge&logo=javascript" alt="Vanilla JS">
+    <a href="https://saiansht.github.io/Cache-4004/"><img src="https://img.shields.io/badge/Live_Deployment-saiansht.github.io%2FCache--4004-0D9488?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Deployment"></a>
+    <img src="https://img.shields.io/badge/Active_Mentorship-ShriTeq_Championship_Teams-2563EB?style=for-the-badge&logo=trophy&logoColor=white" alt="Active Mentorship">
+    <img src="https://img.shields.io/badge/Extensive_Resources-1%2C000+_Questions_%26_Lore-0F172A?style=for-the-badge" alt="Extensive Resources">
   </p>
 </p>
 
@@ -34,9 +33,9 @@ Built with pure Vanilla HTML5, CSS3, and ES6+ JavaScript, Cache-4004 requires ze
 
 ---
 
-## Real-World Impact & Provenance
+## Real-World Impact & Active Mentorship
 
-Cache-4004 served as the primary preparation engine for both teams representing The Shri Ram School at **ShriTeq** (one of India's premier inter-school technology symposiums):
+Cache-4004 served as the primary preparation engine and mentorship hub for both teams representing The Shri Ram School at **ShriTeq** (one of India's premier inter-school technology symposiums):
 - **Adoption:** Deployed and actively utilized by 6 student delegates across both the Senior (3 students) and Junior (3 students) quizzing delegations.
 - **Outcome:** **Both teams won 1st Place**, sweeping both division championships.
 
@@ -131,21 +130,9 @@ Cache-4004/
 
 ---
 
-## Quick Start & Deployment
+## Live Deployment
 
-Cache-4004 requires zero installation or compilation steps:
-
-```bash
-# Clone the repository
-git clone https://github.com/SaianshT/Cache-4004.git
-cd Cache-4004
-
-# Open directly in any modern browser
-open index.html   # On macOS
-start index.html  # On Windows
-```
-
-Or access the live production deployment anytime at **[saiansht.github.io/Cache-4004](https://saiansht.github.io/Cache-4004/)**.
+Access the live production deployment anytime at **[saiansht.github.io/Cache-4004](https://saiansht.github.io/Cache-4004/)**.
 
 ---
 
