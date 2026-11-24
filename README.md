@@ -136,7 +136,14 @@ Access the live production deployment anytime at **[saiansht.github.io/Cache-400
 
 ---
 
-## Author & Credits
+## Author, Algorithmic Citations & Historical Lineage
 
-- **Author & Maintainer:** Saiansh Tapuriah (`SaianshT`)
-- **Live Deployment:** GitHub Pages
+- **Author & Architect:** Saiansh Tapuriah (`SaianshT`)
+- **Algorithmic References (Deck Shuffling):**
+  1. **Durstenfeld, R. (1964).** Algorithm 235: Random permutation. *Communications of the ACM*, 7(7), 420. [doi:10.1145/364520.364540](https://doi.org/10.1145/364520.364540) &mdash; Adapted for the in-place $O(n)$ card-shuffling engine.
+  2. **Knuth, D. E. (1998).** *The Art of Computer Programming, Volume 2: Seminumerical Algorithms* (3rd ed.). Addison-Wesley. (Mathematical proof of uniform $1/n!$ permutation distributions).
+- **Historical Homage:**
+  - Named in tribute to the **Intel 4004** (1971, designed by Federico Faggin, Ted Hoff, Stanley Mazor, and Masatoshi Shima), the world's first commercial microprocessor.
+- **Circuit Validation & Community Testing:**
+  - Developed for and stress-tested by high-school competitive technology quizzing squads across national and Delhi-NCR inter-school circuits (e.g., ShriTeq, MINET, DynamiX, and Exun), directly enabling championship buzzer recall.
+- **Live Deployment:** Hosted on **[GitHub Pages](https://saiansht.github.io/Cache-4004/)**.
